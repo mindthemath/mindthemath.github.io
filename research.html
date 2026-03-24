@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      const slug = new URLSearchParams(window.location.search).get("slug");
+      const target = slug ? `./research/${slug}/` : "./research/";
+      location.replace(new URL(target, window.location.href).href);
+    </script>
+  </head>
+  <body></body>
+</html>

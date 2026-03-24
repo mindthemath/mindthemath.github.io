@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research — Mind the Math</title>
+
+    <!-- Critical: Prevent FOUC by hiding content until JS is ready -->
+    <style>
+      html.no-js #app {
+        visibility: hidden;
+      }
+      html.no-js body {
+        background-color: #f5f4f0;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+
+    <!-- Text Effects CSS -->
+    <link rel="stylesheet" href="/vendor/text-effects.css" />
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="/fonts/fonts.css" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/routes-CXRNMQL3.js"></script>
+    <script type="module" crossorigin src="/assets/_virtual_projects-C2N8pRcA.js"></script>
+    <script type="module" crossorigin src="/assets/_virtual_research-BVOOuJfN.js"></script>
+    <script type="module" crossorigin src="/assets/pages-DxizftWV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/routes-BWJNAwcl.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const slug = new URLSearchParams(window.location.search).get("slug");
+      if (slug) {
+        location.replace(new URL(`./${slug}/`, window.location.href).href);
+      }
+    </script>
+  </body>
+</html>
